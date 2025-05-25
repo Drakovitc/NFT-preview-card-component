@@ -125,7 +125,7 @@ p {
     color: white;
     position: absolute;
     left: 50%;
-    top: 91%;
+    top: 90%;
     transform: translate(-50%, 0);
     text-align: center;
     font-size: 14px;
@@ -149,5 +149,10 @@ p {
     }
     .frontend {
         width: 250px;
+    }
+}
+@media (max-height: 680px) {
+    .frontend {
+        top: 92%;
     }
 }

@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--BgColor);
+    --BgColor: hsl(217, 54%, 11%);
+    --CColor: hsl(216, 50%, 16%);
+    --LColor: hsl(215, 32%, 27%);
+    --TColor: hsl(215, 51%, 70%);
+    --EColor: hsl(178, 100%, 50%);
+    font-family: "Outfit", sans-serif;
+}
+p {
+    font-size: 18px;
+}
+.card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 22px;
+    border-radius: 15px;
+    background-color: var(--CColor);
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 344px;
+}
+.card a {
+    text-decoration: none;
+    border-radius: 8px;
+    height: 256px;
+}
+.card a img:hover {
+    filter: 
+  invert(1) 
+  brightness(82%) 
+  contrast(125%) 
+  saturate(110%) 
+  hue-rotate(158deg) 
+  grayscale(10%) 
+  sepia(12%);
+}
+.card .title a {
+    color: white;
+    background-color: inherit;
+    transition: .2s .08s;
+}
+.card .title a:hover {
+    color: var(--EColor);
+}
+.title {
+    background-color: inherit;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 55px;
+}
+.paragraph{
+    color: var(--TColor);
+    background-color: inherit;
+    font-weight: 300;
+    margin-top: 22px;
+}
+.before_line {
+    background-color: inherit;
+    margin-top: 22px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+}
+.before_line img {
+    background-color: inherit;
+}
+.before_line p {
+    background-color: inherit;
+}
+.before_line .ethereum {
+    color: var(--EColor);
+    margin-left: 8px;
+}
+.before_line .timer {
+    color: var(--TColor);
+    margin-left: auto;
+}
+.before_line .date {
+    color: var(--TColor);
+    margin-left: 5px;
+}
+.before_line::after {
+    content: "";
+    position: absolute;
+    bottom: -23px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--LColor);
+}
+.last {
+    display: flex;
+    flex-direction: row;
+    background-color: inherit;
+    align-items: center;
+    white-space: pre;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.last img {
+    border: solid 1.5px white;
+    border-radius: 50%;
+    background-color: inherit;
+}
+.last .last_p {
+    color: var(--TColor);
+    background-color: inherit;
+    margin-left: 15px;
+}
+.last .last_p a {
+    background-color: inherit;
+    color: white;
+}
+.last .last_p a:hover {
+    color: var(--EColor);
+    transition: .2s .08s;
+}
+.frontend {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 91%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    font-size: 14px;
+}
+.frontend a {
+    text-decoration: none;
+    color: var(--EColor);
+}
+@media (max-width: 375px) {
+    .card {
+        width: 300px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .card a img {
+        width: 256px;
+    }
+    .title {
+        margin-top: 25px;
+    }
+    .frontend {
+        width: 250px;
+    }
+}

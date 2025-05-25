@@ -24,12 +24,14 @@ p {
     flex-flow: column wrap;
     max-width: 344px;
 }
-.card a {
-    text-decoration: none;
+.card a .image {
     border-radius: 8px;
     height: 256px;
 }
-.card a img:hover {
+.card a  {
+    border-radius: 8px;
+}
+.card a .image:hover{
     filter: 
   invert(1) 
   brightness(82%) 
@@ -38,6 +40,30 @@ p {
   hue-rotate(158deg) 
   grayscale(10%) 
   sepia(12%);
+}
+.card a .image:hover + .view{
+  visibility: visible;
+  opacity: 1;
+  width: 0;
+  height: 0;
+  display: hidden;
+}
+.card a .view:hover {
+    opacity: 0;
+}
+.view {
+    visibility: hidden;
+    width: fit-content;
+    background-color: transparent;
+    position: relative;
+    opacity: 0;
+}
+.view img {
+    background-color: inherit;
+    position: absolute;
+    left: 127px;
+    top: -127px;
+    z-index: 1;
 }
 .card .title a {
     color: white;

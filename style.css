@@ -167,9 +167,13 @@ p {
     .frontend {
         width: 250px;
     }
+    body{
+        width: 100vw;
+        overflow: hidden;
+    }
 }
 @media (max-height: 680px) {
     .frontend {
-        top: 92%;
+        top: 91%;
     }
 }

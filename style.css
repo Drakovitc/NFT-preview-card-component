@@ -28,10 +28,11 @@ p {
     border-radius: 8px;
     height: 256px;
 }
-.card a  {
+.card .image a  {
     border-radius: 8px;
+    height: 256px;
 }
-.card a .image:hover{
+.card a img:hover{
     filter: 
   invert(1) 
   brightness(82%) 
@@ -40,13 +41,6 @@ p {
   hue-rotate(158deg) 
   grayscale(10%) 
   sepia(12%);
-}
-.card a .image:hover + .view{
-  visibility: visible;
-  opacity: 1;
-  width: 0;
-  height: 0;
-  display: hidden;
 }
 .view {
     visibility: hidden;

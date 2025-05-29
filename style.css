@@ -28,9 +28,8 @@ p {
     border-radius: 8px;
     height: 256px;
 }
-.card .image a  {
+.card a    {
     border-radius: 8px;
-    height: 256px;
 }
 .card a img:hover{
     filter: 
